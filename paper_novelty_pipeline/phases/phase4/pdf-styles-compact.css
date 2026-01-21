@@ -1,0 +1,240 @@
+body {
+  font-family: "Georgia", "Times New Roman", "Palatino", serif;
+  font-size: 9px;
+  line-height: 1.3;  /* Reduced from 1.35 */
+  color: #2c3e50;
+  text-align: justify;
+  margin: 0.4em 0.6em;  /* Reduced from 0.5em 0.8em */
+  padding: 0;
+}
+
+/* Title styles */
+h1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0.5em;  /* Reduced from 0.7em */
+  margin-bottom: 0.3em;  /* Reduced from 0.4em */
+  page-break-after: avoid;
+  border-bottom: 2px solid #34495e;
+  padding-bottom: 0.1em;  /* Reduced from 0.15em */
+  line-height: 1.2;  /* Reduced from 1.25 */
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 0.5em;  /* Reduced from 0.6em */
+  margin-bottom: 0.25em;  /* Reduced from 0.35em */
+  page-break-after: avoid;
+  border-bottom: 1px solid #7f8c8d;
+  padding-bottom: 0.08em;  /* Reduced from 0.12em */
+  line-height: 1.2;  /* Reduced from 1.25 */
+  color: #2c3e50;
+}
+
+h3 {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 0.6em;  /* Reduced from 0.85em */
+  margin-bottom: 0.25em;  /* Reduced from 0.35em */
+  page-break-after: avoid;
+  line-height: 1.2;  /* Reduced from 1.25 */
+  color: #34495e;
+}
+
+h4 {
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 0.5em;  /* Reduced from 0.7em */
+  margin-bottom: 0.2em;  /* Reduced from 0.25em */
+  margin-left: 0.2em;
+  page-break-after: avoid;
+  line-height: 1.2;  /* Reduced from 1.25 */
+  color: #34495e;
+}
+
+h5 {
+  font-size: 9px;
+  font-weight: 600;
+  margin-top: 0.35em;  /* Reduced from 0.45em */
+  margin-bottom: 0.15em;  /* Reduced from 0.2em */
+  margin-left: 1.2em;
+  page-break-after: avoid;
+  line-height: 1.2;  /* Reduced from 1.25 */
+  color: #555;
+}
+
+/* Paragraph */
+p {
+  margin: 0.3em 0;  /* Reduced from 0.45em */
+  text-indent: 0;
+  line-height: 1.3;  /* Reduced from 1.35 */
+  color: #2c3e50;
+}
+
+
+h4 + p, h4 + ul, h4 + ol {
+  margin-left: 0.6em;
+  margin-top: 0.2em;
+  margin-bottom: 0.15em;
+}
+
+h5 + p, h5 + ul, h5 + ol {
+  margin-left: 1.5em;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0.3em 0;  /* Reduced from 0.4em */
+  padding-left: 1.4em;
+  line-height: 1.3;  /* Reduced from 1.35 */
+}
+
+li {
+  margin: 0.2em 0;  /* Reduced from 0.25em */
+  line-height: 1.3;  /* Reduced from 1.35 */
+  color: #2c3e50;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin: 0.15em 0;  /* Reduced from 0.2em */
+  padding-left: 1.5em;
+}
+
+/* Links - clean, no extra symbols */
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 9px;  /* Changed from 7pt */
+  word-break: break-all;
+}
+
+/* Use smaller font size when "View paper" links appear inside blockquotes */
+/* Use a descendant selector because after Markdown-to-HTML conversion, links may be inside <p> */
+blockquote a {
+  font-size: 6px;  /* Changed from 5pt */
+}
+
+/* Ensure this overrides other possible styles */
+blockquote p > a {
+  font-size: 6px;  /* Changed from 5pt */
+}
+
+/* High textual similarity label: dark red + slightly heavier weight */
+.high-sim-label {
+  color: #8b1e1e;
+  font-weight: 600;
+  font-size: 7px;  /* Changed from 6pt */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+/* Inline code */
+code {
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 8px;  /* Changed from 6.5pt */
+  background-color: #f8f9fa;
+  padding: 1px 3px;
+  border-radius: 2px;
+  color: #c0392b;
+  word-break: break-all;
+}
+
+pre {
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 7px;  /* Changed from 6pt */
+  background-color: #f8f9fa;
+  padding: 0.4em;
+  border-radius: 3px;
+  overflow-x: auto;
+  border: 1px solid #dee2e6;
+  page-break-inside: avoid;
+  line-height: 1.25;
+  margin: 0.4em 0;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #2c3e50;
+}
+
+/* Blockquotes: used for Comparison cards and notes */
+blockquote {
+  margin: 0.4em 0.7em;  /* Reduced from 0.6em 0.9em */
+  padding: 0.25em 0.5em;  /* Reduced from 0.3em 0.6em */
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+  background-color: #f8f9fa;
+  font-style: normal;
+  font-size: 7px;
+  line-height: 1.25;  /* Reduced from 1.3 */
+  color: #333;
+}
+
+/* Text similarity alert card: first line in italics, unified dark red */
+blockquote em {
+  color: #8b1e1e;
+  font-weight: 600;
+}
+
+/* Add extra spacing when a new section heading follows right after a card, to improve hierarchy separation */
+blockquote + h3,
+blockquote + h4 {
+  margin-top: 1.1em;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid #bdc3c7;
+  margin: 0.4em 0;  /* Reduced from 0.5em */
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.3em 0;  /* Reduced from 0.4em */
+  page-break-inside: avoid;
+  font-size: 9px;
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 3px 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Italic - used for descriptive text */
+em {
+  font-style: italic;
+  color: #666;
+}
+
+/* Emphasis */
+strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Avoid widows and orphans */
+p, li {
+  orphans: 2;
+  widows: 2;
+}
+
+h1, h2, h3, h4, h5 {
+  orphans: 2;
+  widows: 2;
+}
