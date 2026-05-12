@@ -85,7 +85,7 @@ sudo apt-get update && sudo apt-get install -y \
   libffi-dev libcairo2 libcairo2-dev libgirepository1.0-dev
 
 # Python dependencies
-cd /path/to/pnp_oss
+cd /path/to/OpenNovelty
 python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
